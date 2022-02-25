@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background: whitesmoke;
+    padding-top: 330px;
+    /* transition: padding-top 0.5s ease; */
+}
+
+header{
+    width: 100%;
+    height: 300px;
+    background: #192a56;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    overflow: hidden;
+    /* transition: all 0.5s ease; */
+}
+
+header h1{
+    font-size: 40px;
+    color: white;
+    line-height: 230px;
+    font-weight: 300;
+    transition: all 0.3s ease;
+}
+
+header h1 i{
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+nav{
+    position: absolute;
+    bottom: 0;
+    height: 60px;
+    width: 100%;
+    background: rgba(39, 60, 117,1.0);
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 60px;
+}
+
+nav ul li a{
+    color: white;
+    line-height: 1;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+header nav a:hover{
+    background: rgb(0,0,0,.5);
+}
+
+/* Card */
+
+.Contenido{
+    padding: 2px 16px;
+    text-align: center;
+}
+
+.Card{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 200px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.Main{
+    width: 80%;
+    margin: 50px auto 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
+    grid-gap: 30px;
+}
+
+img{
+    /* padding: 10px 10px; */
+    width: 200px;
+    height: 200px;
+}
+
+.Card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* End Card */
+
+/* Footer */
+
+footer{
+    background: #192a56;
+    color: white;
+    padding: 1.5em;
+    text-align: center;
+    margin-top: auto;
+    font-weight: 250;
+    /* grid-column: 1 / -1; */
+}
+
+/* End Footer */
+
+/* Text */
+/* End Text */

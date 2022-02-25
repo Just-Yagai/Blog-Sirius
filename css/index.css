@@ -1,0 +1,277 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background: whitesmoke;
+    padding-top: 330px;
+    /* transition: padding-top 0.5s ease; */
+}
+
+header{
+    width: 100%;
+    height: 300px;
+    background: #192a56;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    overflow: hidden;
+    /* transition: all 0.5s ease; */
+}
+
+header h1{
+    font-size: 40px;
+    color: white;
+    line-height: 230px;
+    font-weight: 300;
+    transition: all 0.3s ease;
+}
+
+header h1 i{
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+nav{
+    position: absolute;
+    bottom: 0;
+    height: 60px;
+    width: 100%;
+    background: rgba(39, 60, 117,1.0);
+    /* text-align: right; */
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 60px;
+}
+
+nav ul li a{
+    color: white;
+    line-height: 1;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+header nav a:hover{
+    background: rgb(0,0,0,.5);
+}
+
+/* Contenido */
+
+.Content{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+section{
+    margin: 10px;
+    padding: 20px;
+    background: white;
+    border-radius: 4px;
+    box-shadow: 0 1px 0 silver;
+}
+
+h2{
+    font-size: 34px;
+    text-transform: uppercase;
+    font-weight: 400;
+    line-height: 2;
+    color: #003366;
+    text-align: center;
+}
+
+p{
+    margin-bottom: 2rem;
+    line-height: 2;
+    color: #2f3640;
+    text-align: justify;
+}
+
+/* body.sticky-header{
+    padding-top: 100px;
+}
+
+body.sticky-header header{
+    height: 60px;
+    background: crimson;
+}
+
+body.sticky-header header h1{
+    transform: scale(0, 0);
+} */
+
+/* Slider */
+
+img{
+    width: 642px;
+}
+
+#Slider{
+    width: 642px;
+    margin: 5px auto;
+    overflow: hidden;
+}
+
+#Slider ul{
+    list-style: none;
+    width: 2800px;
+    display: flex;
+    animation: slide 20s infinite alternate;
+}
+
+@keyframes slide{
+    0% {margin-left: 0;}
+    20% {margin-left: 0;} 
+
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+
+    75% {margin-left: -300%;}
+    100% {margin-left: -300%;}
+}
+
+/* End Slider */
+
+/* Card */
+
+.Card{
+    display: flex;
+    padding: 10px;
+    margin: 10px;
+    width: 95%;
+    box-shadow: 0 1px 0 silver;
+    transition: 0.3s; 
+}
+
+.Card:hover{
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.2);
+}
+
+.Container{
+    flex-direction: column;
+    margin-right: 10px;
+    flex: 1;
+    padding: 2px 16px;
+}
+
+.Container p{
+    padding: 5px 0;
+    color: #2f3640;
+    /* font-size: 1.5rem; */
+}
+
+.Image img{
+    display: block;
+    width: 400px;
+    height: 300px;
+    border-radius: 3px;
+}
+
+/* End Card */
+
+/* Acordeon */
+
+.Acordeon{
+    max-width: 960px;
+    margin: 10px auto;
+    /* margin: 10px; */
+    padding: 10px;
+    background: white;
+    border-radius: 4px;
+    box-shadow: 0 1px 0 silver;
+}
+
+details summary{
+    padding: 15px 0;
+    margin: 15px 0;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 15px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-bottom: 1px solid #000000;
+    transition: 0.3s ease-in-out;
+    list-style: none;
+    position: relative;
+    display: flex;
+    align-items: center;
+    /* background: white;
+    border-radius: 4px;
+    box-shadow: 0 1px 0 silver; */
+}
+
+details p{
+    /* color: #1f2021;
+    padding: 15px 0;
+    margin: 0; */
+    margin-bottom: 2rem;
+    line-height: 2;
+    color: #2f3640;
+    text-align: justify;
+}
+
+details summary:hover{
+    color: #192a56;
+    border-color: #192a56;
+}
+
+details[open] summary ~ *{
+    animation: sweep 0.6s ease-in-out;
+}
+
+@keyframes sweep{
+    0%{ opacity: 0; margin-left: -10px; }
+    100% { opacity: 1; margin-left: 0px; }
+}
+
+details summary::after{
+    content: "+";
+    position: absolute;
+    right: 0;
+    font-size: 20px;
+    transform-origin: center;
+    transition: 0.3s linear;
+}
+
+details[open] summary::after{
+    transform: rotate(45deg);
+}
+
+details[open] > summary{
+    color: #192a56;
+    border-color: #192a56;
+}
+/* End Acordeon */
+
+/* Footer */
+
+footer{
+    background: #192a56;
+    color: white;
+    padding: 1.5em;
+    text-align: center;
+    margin-top: auto;
+    font-weight: 250;
+    /* grid-column: 1 / -1; */
+}
+
+/* End Footer */
+
+/* Text Logo */
+
+/* .Logo{
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    float: left;
+    padding-top: 10px;
+} */
+
+/* End */
